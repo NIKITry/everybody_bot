@@ -1,0 +1,27 @@
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# .NET Core build folders
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Rider
+.idea/
+
+# User secrets
+appsettings.Development.json
+
+# Logs
+*.log
+
+# macOS
+.DS_Store 
