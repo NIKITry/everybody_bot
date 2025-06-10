@@ -79,4 +79,26 @@ docker run -d --name telegram-bot \
 - Реализацией функциональности
 - Обработкой ошибок
 - Оптимизацией кода
-- Написанием документации 
+- Написанием документации
+
+## Проверка базы данных
+
+Для просмотра содержимого базы данных используйте команду `sqlite3`:
+
+```sh
+# Установка sqlite3 (если еще не установлен)
+# macOS:
+brew install sqlite3
+# Ubuntu/Debian:
+sudo apt-get install sqlite3
+
+# Просмотр содержимого базы данных
+sqlite3 data/bot.db
+
+# Полезные команды в sqlite3:
+.tables                    # показать все таблицы
+.schema user_settings     # показать структуру таблицы user_settings
+SELECT * FROM users;      # показать всех пользователей
+SELECT * FROM user_settings;  # показать настройки пользователей
+.quit                     # выйти из sqlite3
+``` 
